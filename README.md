@@ -42,4 +42,5 @@ yarn test
 ## Notes
 * All code should be written test-first (TDD)
 * The candidate can Google things or ask for help
+* The candidate can install libraries to help complete the exercise
 * The `main` branch should be kept clean
