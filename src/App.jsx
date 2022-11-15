@@ -1,10 +1,10 @@
 import {useEffect, useState} from "react";
-import loanApplicationData from './loanApplications.json'
+import loanApplicationsData from './loanApplicationsData.json'
 
 const App = () => {
   const [loanApplications, setLoanApplications] = useState()
   useEffect(() => {
-    setLoanApplications(loanApplicationData.data)
+    setLoanApplications(loanApplicationsData.data)
   }, [])
 
   return (
