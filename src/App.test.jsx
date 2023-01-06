@@ -23,9 +23,9 @@ describe("Loan applications dashboard view", () => {
     render(<App />);
     screen.getByText("Alice Jones");
     screen.getByText("17 Fore St, Somerset, TA21 8AA");
-    screen.getAllByText("RESIDENTIAL");
-    screen.getAllByText("0.072");
-    screen.getAllByText("500000");
+    screen.getAllByText("Residential");
+    screen.getAllByText("7.2%");
+    screen.getAllByText("£500,000.00");
     screen.getByText("2022-11-15T10:29:22.508871");
     screen.getAllByText("Incomplete");
   });
@@ -34,9 +34,9 @@ describe("Loan applications dashboard view", () => {
     render(<App />);
     screen.getByText("Daffy Duck");
     screen.getByText("65 Rowlands Rd, West Sussex, BN11 3JN");
-    screen.getByText("COMMERCIAL");
-    screen.getByText("0.054");
-    screen.getByText("870000");
+    screen.getByText("Commercial");
+    screen.getByText("5.4%");
+    screen.getByText("£870,000.00");
     screen.getByText("2022-11-15T09:27:27.986370");
     screen.getByText("Submitted");
   });

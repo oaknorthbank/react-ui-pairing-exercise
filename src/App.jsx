@@ -25,9 +25,9 @@ const App = () => {
           <tr>
             <td>{application.clientName}</td>
             <td>{application.propertyAddress}</td>
-            <td>{application.loanType}</td>
-            <td>{application.allInRate}</td>
-            <td>{application.loanAmount}</td>
+            <td>{application.loanType.charAt(0).toUpperCase() + application.loanType.toLowerCase().slice(1)}</td>
+            <td>{Math.round(((application.allInRate * 100) + Number.EPSILON) * 100) / 100}%</td>
+            <td>{new Intl.NumberFormat("en-GB", { style: 'currency', currency: 'GBP' }).format(application.loanAmount)}</td>
             <td>{application.createdAt}</td>
             <td>{(application.submittedAt) ? "Submitted" : "Incomplete"}</td>
           </tr>
