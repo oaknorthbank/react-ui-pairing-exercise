@@ -1,11 +1,11 @@
-import {useEffect, useState} from "react";
-import loanApplicationsData from './loanApplicationsData.json'
+import { useEffect, useState } from "react";
+import loanApplicationsData from "./loanApplicationsData.json";
 
 const App = () => {
-  const [loanApplications, setLoanApplications] = useState()
+  const [loanApplications, setLoanApplications] = useState();
   useEffect(() => {
-    setLoanApplications(loanApplicationsData.data)
-  }, [])
+    setLoanApplications(loanApplicationsData.data);
+  }, []);
 
   return (
     <div className="App">
