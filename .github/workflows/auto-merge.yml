@@ -1,0 +1,14 @@
+---
+name: Dependabot
+
+on:
+  pull_request:
+    types: [opened, reopened, labeled, edited]
+  pull_request_review:
+    types: [dismissed]
+
+jobs:
+  automerge:
+    uses: oaknorthbank/github-shared-actions/.github/workflows/github-action-merge-dependabot.yml@main
+    secrets:
+      GH_TOKEN: ${{ secrets.GH_PAT_TOKEN }}
