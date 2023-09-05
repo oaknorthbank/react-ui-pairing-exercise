@@ -1,0 +1,14 @@
+_extends: .github:.github/default-settings.yml
+
+repository:
+  name: react-ui-pairing-exercise
+
+collaborators:
+  - username: onb-githubuser
+    permission: push
+
+branches:
+  - name: main
+    protection:
+      required_status_checks:
+        strict: true
