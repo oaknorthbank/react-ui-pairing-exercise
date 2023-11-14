@@ -11,4 +11,5 @@ jobs:
   automerge:
     uses: oaknorthbank/github-shared-actions/.github/workflows/github-action-merge-dependabot.yml@main
     secrets:
-      GH_TOKEN: ${{ secrets.GH_PAT_TOKEN }}
+      app_id: ${{ secrets.DEPENDABOT_AUTOMERGE_APP_ID }}
+      app_private_key: ${{ secrets.DEPENDABOT_AUTOMERGE_APP_PRIVATE_KEY }}
