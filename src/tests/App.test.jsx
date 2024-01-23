@@ -1,9 +1,7 @@
-import matchers from "@testing-library/jest-dom/matchers";
+import "@testing-library/jest-dom/vitest";
 import { describe, expect, test } from "vitest";
 import { render, screen } from "@testing-library/react";
 import App from "../App.jsx";
-
-expect.extend(matchers);
 
 describe("Loan applications dashboard view", () => {
   test("displays a hello world title", () => {
