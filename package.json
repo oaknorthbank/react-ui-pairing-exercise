@@ -21,7 +21,7 @@
     "@types/react": "^18.0.24",
     "@types/react-dom": "^18.0.8",
     "@vitejs/plugin-react": "^4.2.1",
-    "@vitest/browser": "^0.25.2",
+    "@vitest/browser": "^1.2.2",
     "jsdom": "^20.0.2",
     "prettier": "^3.1.1",
     "vite": "^3.2.3",
