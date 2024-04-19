@@ -12,3 +12,9 @@ branches:
     protection:
       required_status_checks:
         strict: true
+
+repository:
+  # See https://github.com/apps/settings for all available settings.
+  name: react-ui-pairing-exercise
+  description: null
+  topics: "squad::Personal Savings, mission::Personal Savings, product::Transactional Bank, environment::Sandbox"
